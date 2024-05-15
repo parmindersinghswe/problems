@@ -1,4 +1,4 @@
-﻿namespace Problems.RomanToInteger
+﻿namespace Problems.Library.RomanToInteger
 {
     public class RomanToInteger
     {

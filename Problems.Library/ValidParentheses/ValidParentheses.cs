@@ -1,6 +1,6 @@
-﻿namespace Problems.ValidParentheses
+﻿namespace Problems.Library.ValidParentheses
 {
-    internal class ValidParentheses
+    public class ValidParentheses
     {
         // Helper method to check if a character is an opening bracket
         private bool isOpen(char br)

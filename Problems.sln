@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.002.0
+VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problems", "Problems.csproj", "{EB2D8D83-AC10-4DE0-96DA-072568FC15DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems.Library", "Problems.Library\Problems.Library.csproj", "{38B3F95B-54CF-455D-AB33-8340CB76EB7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems.Test", "Problems.Test\Problems.Test.csproj", "{A0CAA829-7CD8-474A-A330-A22117E530A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB2D8D83-AC10-4DE0-96DA-072568FC15DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB2D8D83-AC10-4DE0-96DA-072568FC15DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB2D8D83-AC10-4DE0-96DA-072568FC15DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB2D8D83-AC10-4DE0-96DA-072568FC15DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B3F95B-54CF-455D-AB33-8340CB76EB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B3F95B-54CF-455D-AB33-8340CB76EB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B3F95B-54CF-455D-AB33-8340CB76EB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B3F95B-54CF-455D-AB33-8340CB76EB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CAA829-7CD8-474A-A330-A22117E530A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CAA829-7CD8-474A-A330-A22117E530A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CAA829-7CD8-474A-A330-A22117E530A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CAA829-7CD8-474A-A330-A22117E530A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FE3B22E3-6CFB-4460-B1B6-42362B34F188}
+		SolutionGuid = {B55361A8-4264-4398-AB93-95A6A5FC4422}
 	EndGlobalSection
 EndGlobal
