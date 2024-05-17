@@ -1,11 +1,11 @@
 ﻿namespace Problems.Test.Easy
 {
-    public class RemoveElement
+    public class RemoveElementTests
     {
         [Theory]
         [InlineData(new int[] { 3, 2, 2, 3 }, 3, 2, new int[] { 2, 2 })]
         [InlineData(new int[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2, 5, new int[] { 0, 1, 4, 0, 3 })]
-        public void RemoveElementTest(int[] nums, int val, int expectedK, int[] expectedNums)
+        public void RemoveElement_Test(int[] nums, int val, int expectedK, int[] expectedNums)
         {
             // Arrange
             Library.Easy.RemoveElement.RemoveElement solution = new Library.Easy.RemoveElement.RemoveElement();

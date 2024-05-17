@@ -1,6 +1,6 @@
 namespace Problems.Library.Easy.Palidrom.NumberPalidrom
 {
-    public class NumberPalidromSolution
+    public class NumberPalindromeSolution
     {
         public bool IsPalindrome(int x)
         {
