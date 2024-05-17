@@ -1,11 +1,11 @@
-﻿namespace Problems.Test
+﻿namespace Problems.Test.Easy
 {
     public class LongestCommonPrefix
     {
         [Fact]
         public void LongestCommonPrefixTest()
         {
-            Library.LongestCommonPrefix.LongestCommonPrefix prefix = new Library.LongestCommonPrefix.LongestCommonPrefix();
+            Library.Easy.LongestCommonPrefix.LongestCommonPrefix prefix = new Library.Easy.LongestCommonPrefix.LongestCommonPrefix();
             string result = prefix.Solve(["flower", "flow", "flight"]);
             string expected = "fl";
             Assert.Equal(result, expected);

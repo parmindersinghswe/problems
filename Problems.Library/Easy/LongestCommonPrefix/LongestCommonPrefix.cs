@@ -1,4 +1,4 @@
-﻿namespace Problems.Library.LongestCommonPrefix
+﻿namespace Problems.Library.Easy.LongestCommonPrefix
 {
     public class LongestCommonPrefix
     {

@@ -1,4 +1,4 @@
-﻿namespace Problems.Library.MergeTwoSortedLists
+﻿namespace Problems.Library.Easy.MergeTwoSortedLists
 {
     public class ListNode
     {

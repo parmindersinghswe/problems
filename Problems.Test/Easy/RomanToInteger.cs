@@ -1,11 +1,11 @@
-﻿namespace Problems.Test
+﻿namespace Problems.Test.Easy
 {
     public class RomanToInteger
     {
         [Fact]
         public void RomanToIntegerTest()
         {
-            Library.RomanToInteger.RomanToInteger romanToInteger = new Library.RomanToInteger.RomanToInteger();
+            Library.Easy.RomanToInteger.RomanToInteger romanToInteger = new Library.Easy.RomanToInteger.RomanToInteger();
             int result = romanToInteger.RomanToInt("III");
             int expected = 3;
             Assert.Equal(result, expected);

@@ -1,11 +1,11 @@
-﻿namespace Problems.Test
+﻿namespace Problems.Test.Easy
 {
     public class ValidParentheses
     {
         [Fact]
         public void ValidParenthesesTest()
         {
-            Library.ValidParentheses.ValidParentheses validParentheses = new Library.ValidParentheses.ValidParentheses();
+            Library.Easy.ValidParentheses.ValidParentheses validParentheses = new Library.Easy.ValidParentheses.ValidParentheses();
             bool result = validParentheses.IsValid("()");
             bool expected = true;
             Assert.Equal(result, expected);

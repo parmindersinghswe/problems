@@ -1,4 +1,4 @@
-﻿namespace Problems.Library.RomanToInteger
+﻿namespace Problems.Library.Easy.RomanToInteger
 {
     public class RomanToInteger
     {
@@ -20,7 +20,7 @@
             {
                 if (prev != '\0' && romanIntegers[c] > romanIntegers[prev])
                 {
-                    total = total - (2 * romanIntegers[prev]);
+                    total = total - 2 * romanIntegers[prev];
                 }
                 total = total + romanIntegers[c];
                 prev = c;

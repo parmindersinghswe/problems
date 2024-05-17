@@ -1,6 +1,6 @@
-﻿using Problems.Library.MergeTwoSortedLists;
+﻿using Problems.Library.Easy.MergeTwoSortedLists;
 
-namespace Problems.Test
+namespace Problems.Test.Easy
 {
     public class MergeTwoSortedListsTests
     {

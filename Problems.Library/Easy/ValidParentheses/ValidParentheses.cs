@@ -1,4 +1,4 @@
-﻿namespace Problems.Library.ValidParentheses
+﻿namespace Problems.Library.Easy.ValidParentheses
 {
     public class ValidParentheses
     {
@@ -28,7 +28,7 @@
                     else
                     {
                         // If the current character is a closing bracket, check if it matches the top of the stack
-                        if ((s[i] == ')' && stk1.Peek() == '(') || (s[i] == '}' && stk1.Peek() == '{') || (s[i] == ']' && stk1.Peek() == '['))
+                        if (s[i] == ')' && stk1.Peek() == '(' || s[i] == '}' && stk1.Peek() == '{' || s[i] == ']' && stk1.Peek() == '[')
                         {
                             // If it matches, pop the top of the stack
                             stk1.Pop();
