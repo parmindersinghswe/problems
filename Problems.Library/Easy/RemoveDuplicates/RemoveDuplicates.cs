@@ -1,7 +1,27 @@
-﻿namespace Problems.Library.Easy.RemoveDuplicates
+﻿using Problems.Library.Easy.MergeTwoSortedLists;
+using Problems.Library.Models;
+
+namespace Problems.Library.Easy.RemoveDuplicates
 {
     public class RemoveDuplicates
     {
+        public ListNode Remove(ListNode head)
+        {
+            ListNode ptr = head;
+
+            while (ptr != null && ptr.next != null)
+            {
+                if (ptr.val == ptr.next.val)
+                {
+                    ptr.next = ptr.next.next;
+                }
+                else
+                {
+                    ptr = ptr.next;
+                }
+            }
+            return head;
+        }
         public int Remove(int[] nums)
         {
             // Initialize 'prev' to a value that is not present in the array to start the comparison

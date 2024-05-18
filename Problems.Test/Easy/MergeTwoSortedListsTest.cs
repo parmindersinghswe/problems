@@ -1,4 +1,5 @@
-﻿using Problems.Library.Easy.MergeTwoSortedLists;
+﻿using Problems.Library.Models;
+using Problems.Library.Easy.MergeTwoSortedLists;
 
 namespace Problems.Test.Easy
 {
@@ -30,7 +31,7 @@ namespace Problems.Test.Easy
             ListNode head = new ListNode(array[0]);
             ListNode current = head;
 
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 1;i < array.Length;i++)
             {
                 current.next = new ListNode(array[i]);
                 current = current.next;
