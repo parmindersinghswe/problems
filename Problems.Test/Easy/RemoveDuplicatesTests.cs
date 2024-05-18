@@ -37,16 +37,16 @@ namespace Problems.Test.Easy
         {
             Library.Easy.RemoveDuplicates.RemoveDuplicates solution = new Library.Easy.RemoveDuplicates.RemoveDuplicates();
             // Arrange
-            ListNode inputList = CreateLinkedList(inputArray);
-            ListNode expectedList = CreateLinkedList(expectedArray);
+            ListNode? inputList = CreateLinkedList(inputArray);
+            ListNode? expectedList = CreateLinkedList(expectedArray);
 
             // Act
-            ListNode actualList = solution.Remove(inputList);
+            ListNode? actualList = solution.Remove(inputList);
 
             // Assert
             Assert.True(CompareLinkedLists(expectedList, actualList));
         }
-        private ListNode CreateLinkedList(int[] values)
+        private ListNode? CreateLinkedList(int[] values)
         {
             if (values.Length == 0) return null;
 
@@ -60,7 +60,7 @@ namespace Problems.Test.Easy
             return head;
         }
 
-        private bool CompareLinkedLists(ListNode l1, ListNode l2)
+        private bool CompareLinkedLists(ListNode? l1, ListNode? l2)
         {
             while (l1 != null && l2 != null)
             {

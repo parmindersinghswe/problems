@@ -5,9 +5,9 @@ namespace Problems.Library.Easy.RemoveDuplicates
 {
     public class RemoveDuplicates
     {
-        public ListNode Remove(ListNode head)
+        public ListNode? Remove(ListNode? head)
         {
-            ListNode ptr = head;
+            ListNode? ptr = head;
 
             while (ptr != null && ptr.next != null)
             {
