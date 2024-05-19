@@ -1,7 +1,15 @@
 ﻿namespace Problems.Library.Easy.MySqrt
 {
+    /// <summary>
+    /// Solutions of Squaroot problems
+    /// </summary>
     public class MySqrtSolution
     {
+        /// <summary>
+        /// Return the nearest squaroot integer value of given input.
+        /// </summary>
+        /// <param name="x">Input integer value.</param>
+        /// <returns></returns>
         public int Find(int x)
         {
             if (x <= 1)

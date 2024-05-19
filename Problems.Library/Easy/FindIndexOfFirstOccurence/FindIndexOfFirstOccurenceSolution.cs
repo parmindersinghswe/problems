@@ -1,7 +1,16 @@
 ﻿namespace Problems.Library.Easy.FindIndexOfFirstOccurence
 {
+    /// <summary>
+    /// To find the Index of the substring from given string.
+    /// </summary>
     public class FindIndexOfFirstOccurenceSolution
     {
+        /// <summary>
+        /// Return the First matched substring index from the given string
+        /// </summary>
+        /// <param name="haystack">string input value</param>
+        /// <param name="needle">substring input value</param>
+        /// <returns></returns>
         public int Find(string haystack, string needle)
         {
             int current = 0;

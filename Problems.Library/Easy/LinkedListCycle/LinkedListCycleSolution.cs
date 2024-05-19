@@ -2,9 +2,17 @@
 
 namespace Problems.Library.Easy.LinkedListCycle
 {
+    /// <summary>
+    /// Solutions related to the Cycles in the Linked List
+    /// </summary>
     public class LinkedListCycleSolution
     {
-        public bool HasCycle(ListNode head)
+        /// <summary>
+        /// Check if given Linked List has cycle exists or not.
+        /// </summary>
+        /// <param name="head">Head node of the linked list.</param>
+        /// <returns></returns>
+        public bool HasCycle(ListNode? head)
         {
             if (head == null || head.next == null)
             {

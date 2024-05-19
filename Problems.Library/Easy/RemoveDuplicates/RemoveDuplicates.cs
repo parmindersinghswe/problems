@@ -2,8 +2,16 @@
 
 namespace Problems.Library.Easy.RemoveDuplicates
 {
+    /// <summary>
+    /// To remove the duplicate values.
+    /// </summary>
     public class RemoveDuplicates
     {
+        /// <summary>
+        /// Remove and return the linked list header after removing the duplicates from the sorted linked list.
+        /// </summary>
+        /// <param name="head">Input of the sorted linked list head node.</param>
+        /// <returns></returns>
         public ListNode? Remove(ListNode? head)
         {
             ListNode? ptr = head;
@@ -21,6 +29,11 @@ namespace Problems.Library.Easy.RemoveDuplicates
             }
             return head;
         }
+        /// <summary>
+        /// Update the array with unique values and return the number of unique value.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public int Remove(int[] nums)
         {
             // Initialize 'prev' to a value that is not present in the array to start the comparison

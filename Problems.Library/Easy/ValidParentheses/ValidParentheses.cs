@@ -1,14 +1,25 @@
 ﻿namespace Problems.Library.Easy.ValidParentheses
 {
+    /// <summary>
+    /// To check if givin paranthesis are valid or not.
+    /// </summary>
     public class ValidParentheses
     {
-        // Helper method to check if a character is an opening bracket
+        /// <summary>
+        /// Helper method to check if a character is an opening bracket
+        /// </summary>
+        /// <param name="br">input parentheses character</param>
+        /// <returns></returns>
         private bool isOpen(char br)
         {
             return br == '(' || br == '{' || br == '[';
         }
 
-        // Main method to determine if a given string of brackets is valid
+        /// <summary>
+        /// Main method to determine if a given string of brackets is valid
+        /// </summary>
+        /// <param name="s">Given input string contains the sequence of parantheses</param>
+        /// <returns></returns>
         public bool IsValid(string s)
         {
             // Stack to keep track of opening brackets

@@ -1,7 +1,15 @@
 ﻿namespace Problems.Library.Easy.LongestCommonPrefix
 {
+    /// <summary>
+    /// To find the common string exists at the start of the given array of strings.
+    /// </summary>
     public class LongestCommonPrefix
     {
+        /// <summary>
+        /// return the common string exists at the start of the given array of strings.
+        /// </summary>
+        /// <param name="strs">input array of strings</param>
+        /// <returns></returns>
         public string Solve(string[] strs)
         {
             int length = strs.Length;

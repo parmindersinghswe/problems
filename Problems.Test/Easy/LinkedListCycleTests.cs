@@ -20,7 +20,7 @@ namespace Problems.Test.Easy
         [MemberData(nameof(HasCycleTestData))]
         public void HasCycle_Test(int[] values, int pos, bool expected)
         {
-            ListNode head = LinkedListService.CreateLinkedList(values, pos);
+            ListNode? head = LinkedListService.CreateLinkedList(values, pos);
             LinkedListCycleSolution solution = new LinkedListCycleSolution();
             bool result = solution.HasCycle(head);
             Assert.Equal(expected, result);

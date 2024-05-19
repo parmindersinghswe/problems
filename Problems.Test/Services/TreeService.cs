@@ -2,8 +2,16 @@
 
 namespace Problems.Test.Services
 {
+    /// <summary>
+    /// Tree Helper Class To Do the basic operations.
+    /// </summary>
     public static class TreeService
     {
+        /// <summary>
+        /// Return Root node after creating binary tree from given array of integer values.
+        /// </summary>
+        /// <param name="values">Array of integer values.</param>
+        /// <returns></returns>
         public static TreeNode? CreateTree(int?[] values)
         {
             if (values.Length == 0 || values[0] == null) return null;

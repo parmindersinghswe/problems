@@ -1,7 +1,15 @@
 ﻿namespace Problems.Library.Easy.RomanToInteger
 {
+    /// <summary>
+    /// Conversion from Roman to Integer value.
+    /// </summary>
     public class RomanToInteger
     {
+        /// <summary>
+        /// Return the integer value for the given roman input.
+        /// </summary>
+        /// <param name="s">Roman input value.</param>
+        /// <returns></returns>
         public int RomanToInt(string s)
         {
             Dictionary<char, int> romanIntegers = new Dictionary<char, int>
