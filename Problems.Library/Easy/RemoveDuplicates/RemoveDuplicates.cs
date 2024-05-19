@@ -1,5 +1,4 @@
-﻿using Problems.Library.Easy.MergeTwoSortedLists;
-using Problems.Library.Models;
+﻿using Problems.Library.Models;
 
 namespace Problems.Library.Easy.RemoveDuplicates
 {

@@ -1,4 +1,4 @@
-﻿
+﻿using Problems.Test.Services;
 using Problems.Library.Models;
 
 namespace Problems.Test.Easy
@@ -37,38 +37,14 @@ namespace Problems.Test.Easy
         {
             Library.Easy.RemoveDuplicates.RemoveDuplicates solution = new Library.Easy.RemoveDuplicates.RemoveDuplicates();
             // Arrange
-            ListNode? inputList = CreateLinkedList(inputArray);
-            ListNode? expectedList = CreateLinkedList(expectedArray);
+            ListNode? inputList = LinkedListService.CreateLinkedList(inputArray);
+            ListNode? expectedList = LinkedListService.CreateLinkedList(expectedArray);
 
             // Act
             ListNode? actualList = solution.Remove(inputList);
 
             // Assert
-            Assert.True(CompareLinkedLists(expectedList, actualList));
-        }
-        private ListNode? CreateLinkedList(int[] values)
-        {
-            if (values.Length == 0) return null;
-
-            ListNode head = new ListNode(values[0]);
-            ListNode current = head;
-            for (int i = 1; i < values.Length; i++)
-            {
-                current.next = new ListNode(values[i]);
-                current = current.next;
-            }
-            return head;
-        }
-
-        private bool CompareLinkedLists(ListNode? l1, ListNode? l2)
-        {
-            while (l1 != null && l2 != null)
-            {
-                if (l1.val != l2.val) return false;
-                l1 = l1.next;
-                l2 = l2.next;
-            }
-            return l1 == null && l2 == null;
+            Assert.True(LinkedListService.CompareLinkedLists(expectedList, actualList));
         }
     }
 }
