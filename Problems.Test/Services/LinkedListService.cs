@@ -72,5 +72,20 @@ namespace Problems.Test.Services
 
             return head;
         }
+        /// <summary>
+        /// Returns the list of integers converted from linked list values.
+        /// </summary>
+        /// <param name="head">Input Head node of linked list.</param>
+        /// <returns></returns>
+        public static List<int> ConvertToList(ListNode? head)
+        {
+            List<int> result = new List<int>();
+            while (head != null)
+            {
+                result.Add(head.val);
+                head = head.next;
+            }
+            return result;
+        }
     }
 }
