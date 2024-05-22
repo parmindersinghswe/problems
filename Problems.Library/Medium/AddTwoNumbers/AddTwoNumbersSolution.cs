@@ -1,6 +1,6 @@
 ﻿using Problems.Library.Models;
 
-namespace Problems.Test.Medium
+namespace Problems.Library.Medium.AddTwoNumbers
 {
     /// <summary>
     /// Add Two Big Integer Numbers
@@ -21,8 +21,8 @@ namespace Problems.Test.Medium
 
             while (l1 != null || l2 != null)
             {
-                int x = (l1 != null) ? l1.val : 0;
-                int y = (l2 != null) ? l2.val : 0;
+                int x = l1 != null ? l1.val : 0;
+                int y = l2 != null ? l2.val : 0;
                 int sum = x + y + carry;
                 carry = sum / 10;
                 current.next = new ListNode(sum % 10);
