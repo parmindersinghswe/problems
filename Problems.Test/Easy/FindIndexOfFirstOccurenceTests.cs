@@ -1,4 +1,5 @@
-﻿using Problems.Library.Easy.FindIndexOfFirstOccurence;
+﻿using Problems.Library.Easy.FindIndexOfFirstOccurrence;
+
 namespace Problems.Test.Easy
 {
     public class FindIndexOfFirstOccurenceTests
@@ -13,7 +14,7 @@ namespace Problems.Test.Easy
         [InlineData("", "a", -1)]
         public void Find_Test(string haystack, string needle, int expected)
         {
-            FindIndexOfFirstOccurenceSolution solution = new FindIndexOfFirstOccurenceSolution();
+            FindIndexOfFirstOccurrenceSolution solution = new FindIndexOfFirstOccurrenceSolution();
             int result = solution.Find(haystack, needle);
             Assert.Equal(expected, result);
         }

@@ -1,4 +1,4 @@
-﻿using Problems.Library.Easy.Palidrom.NumberPalidrom;
+﻿using Problems.Library.Easy.Palindrome.NumberPalindrome;
 
 namespace Problems.Test.Easy
 {
