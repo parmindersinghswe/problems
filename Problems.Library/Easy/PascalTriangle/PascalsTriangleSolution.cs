@@ -1,15 +1,15 @@
 ﻿namespace Problems.Library.Easy.PascalTriangle
 {
     /// <summary>
-    /// Solutions related to the Pascals Triangle
+    /// Solutions related to Pascal's Triangle.
     /// </summary>
     public class PascalsTriangleSolution
     {
         /// <summary>
-        /// Return the Jagged Array represent the Pascal Triangle with the number of rows given in the input parameter.
+        /// Generates a jagged array representing Pascal's Triangle with the specified number of rows.
         /// </summary>
-        /// <param name="numRows">Number of rows input parameter.</param>
-        /// <returns></returns>
+        /// <param name="numRows">The number of rows for Pascal's Triangle.</param>
+        /// <returns>A jagged array representing Pascal's Triangle.</returns>
         public IList<IList<int>> Generate(int numRows)
         {
             IList<IList<int>> list = new List<IList<int>>();
@@ -33,11 +33,12 @@
 
             return list;
         }
+
         /// <summary>
-        /// Return the particular row after generating based on the given row index.
+        /// Generates a specific row of Pascal's Triangle based on the given row index.
         /// </summary>
-        /// <param name="rowIndex">Input of row index.</param>
-        /// <returns></returns>
+        /// <param name="rowIndex">The index of the row to generate.</param>
+        /// <returns>A list representing the specified row of Pascal's Triangle.</returns>
         public IList<int> GetRow(int rowIndex)
         {
             IList<int> row = new List<int>(new int[rowIndex + 1]);

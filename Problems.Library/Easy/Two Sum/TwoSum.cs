@@ -1,16 +1,16 @@
 namespace Problems.Library.TwoSum
 {
     /// <summary>
-    /// To find the two values their sum is the target
+    /// Solution to find two numbers in an array whose sum equals a given target.
     /// </summary>
     public class TwoSumSolution
     {
         /// <summary>
-        /// Return the indexes of two integers their sum is equal to the given target value.
+        /// Finds the indices of the two integers in the array that sum up to the given target value.
         /// </summary>
         /// <param name="nums">Array of integers.</param>
-        /// <param name="target">Target value.</param>
-        /// <returns></returns>
+        /// <param name="target">The target sum value.</param>
+        /// <returns>An array containing the indices of the two integers that sum up to the target value.</returns>
         public int[] TwoSum(int[] nums, int target)
         {
             Dictionary<int, int> map = new Dictionary<int, int>();

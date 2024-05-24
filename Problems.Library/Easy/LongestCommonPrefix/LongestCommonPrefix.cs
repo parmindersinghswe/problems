@@ -1,15 +1,15 @@
 ﻿namespace Problems.Library.Easy.LongestCommonPrefix
 {
     /// <summary>
-    /// To find the common string exists at the start of the given array of strings.
+    /// Solution to find the common prefix at the start of the given array of strings.
     /// </summary>
     public class LongestCommonPrefix
     {
         /// <summary>
-        /// return the common string exists at the start of the given array of strings.
+        /// Returns the common prefix at the start of the given array of strings.
         /// </summary>
-        /// <param name="strs">input array of strings</param>
-        /// <returns></returns>
+        /// <param name="strs">The input array of strings.</param>
+        /// <returns>The longest common prefix.</returns>
         public string Solve(string[] strs)
         {
             int length = strs.Length;
@@ -21,8 +21,7 @@
                 // If the current string does not start with the common prefix
                 if (!strs[i].StartsWith(common))
                 {
-                    //If the common/prefix string start with the current string
-                    //set the common prefix to the current string
+                    // If the common prefix starts with the current string, update the common prefix
                     if (common.StartsWith(strs[i]))
                     {
                         common = strs[i];

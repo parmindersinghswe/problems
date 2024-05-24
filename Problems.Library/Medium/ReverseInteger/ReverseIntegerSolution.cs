@@ -1,15 +1,15 @@
 ﻿namespace Problems.Library.Medium.ReverseInteger
 {
     /// <summary>
-    /// Perform the reverse Integer operations
+    /// Solution to perform reverse integer operations.
     /// </summary>
     public class ReverseIntegerSolution
     {
         /// <summary>
-        /// Return the integer after reversing the digits if reversed number is not in the integer max or min value then returns zero.
+        /// Reverses the digits of an integer. If the reversed integer overflows, returns zero.
         /// </summary>
-        /// <param name="x">Input integer value.</param>
-        /// <returns></returns>
+        /// <param name="x">The input integer value.</param>
+        /// <returns>The reversed integer value, or zero if it overflows.</returns>
         public int Reverse(int x)
         {
             long reverse = 0;
@@ -26,5 +26,4 @@
             return (int)reverse;
         }
     }
-
 }

@@ -3,15 +3,15 @@
 namespace Problems.Library.Easy.RemoveDuplicates
 {
     /// <summary>
-    /// To remove the duplicate values.
+    /// Solutions for removing duplicate values.
     /// </summary>
     public class RemoveDuplicates
     {
         /// <summary>
-        /// Remove and return the linked list header after removing the duplicates from the sorted linked list.
+        /// Removes duplicates from a sorted linked list and returns the head of the modified list.
         /// </summary>
-        /// <param name="head">Input of the sorted linked list head node.</param>
-        /// <returns></returns>
+        /// <param name="head">The head node of the sorted linked list.</param>
+        /// <returns>The head node of the linked list after removing duplicates.</returns>
         public ListNode? Remove(ListNode? head)
         {
             ListNode? ptr = head;
@@ -29,11 +29,12 @@ namespace Problems.Library.Easy.RemoveDuplicates
             }
             return head;
         }
+
         /// <summary>
-        /// Update the array with unique values and return the number of unique value.
+        /// Removes duplicates from an array and returns the number of unique elements.
         /// </summary>
-        /// <param name="nums"></param>
-        /// <returns></returns>
+        /// <param name="nums">The input array of integers.</param>
+        /// <returns>The number of unique elements in the array after removing duplicates.</returns>
         public int Remove(int[] nums)
         {
             // Initialize 'prev' to a value that is not present in the array to start the comparison

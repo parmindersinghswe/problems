@@ -3,16 +3,16 @@
 namespace Problems.Library.Easy.PathSum
 {
     /// <summary>
-    /// Solutions of the Path Sum of the tree
+    /// Solutions for the Path Sum problem in a binary tree.
     /// </summary>
     public class PathSumSolution
     {
         /// <summary>
-        /// Return true if any path of the tree nodes sum is equal to the target Sum.
+        /// Determines if there is a path in the binary tree where the sum of the node values equals the target sum.
         /// </summary>
-        /// <param name="root">Input root node of the binary tree.</param>
-        /// <param name="targetSum">Input target sum.</param>
-        /// <returns></returns>
+        /// <param name="root">The root node of the binary tree.</param>
+        /// <param name="targetSum">The target sum to check against.</param>
+        /// <returns>True if such a path exists, otherwise false.</returns>
         public bool HasPathSum(TreeNode? root, int targetSum)
         {
             if (root == null) return false;

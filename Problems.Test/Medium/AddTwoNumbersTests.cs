@@ -22,7 +22,7 @@ namespace Problems.Test.Medium
 
         [Theory]
         [MemberData(nameof(AddTwoNumbersTestData))]
-        public void Test_AddTwoNumbers(int[] l1Values, int[] l2Values, int[] expectedValues)
+        public void AddTwoNumbers_Test(int[] l1Values, int[] l2Values, int[] expectedValues)
         {
             ListNode? l1 = LinkedListService.CreateLinkedList(l1Values);
             ListNode? l2 = LinkedListService.CreateLinkedList(l2Values);

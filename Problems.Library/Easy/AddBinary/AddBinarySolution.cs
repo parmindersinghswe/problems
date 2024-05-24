@@ -1,16 +1,16 @@
 ﻿namespace Problems.Library.Easy.AddBinary
 {
     /// <summary>
-    /// To add two binary string values
+    /// Solution for adding two binary strings.
     /// </summary>
     public class AddBinarySolution
     {
         /// <summary>
-        /// Adds and return addition of two binary numbers represented in string
+        /// Adds two binary numbers represented as strings and returns the sum.
         /// </summary>
-        /// <param name="a">first binary input</param>
-        /// <param name="b">second binary input</param>
-        /// <returns></returns>
+        /// <param name="a">The first binary string.</param>
+        /// <param name="b">The second binary string.</param>
+        /// <returns>The binary sum as a string.</returns>
         public string AddBinary(string a, string b)
         {
             System.Text.StringBuilder result = new System.Text.StringBuilder();

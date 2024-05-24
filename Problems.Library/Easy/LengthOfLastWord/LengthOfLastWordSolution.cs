@@ -1,15 +1,15 @@
 ﻿namespace Problems.Library.Easy.LengthOfLastWord
 {
     /// <summary>
-    /// To find the length of word that exists at the end of the given string.
+    /// Solution to find the length of the last word in the given string.
     /// </summary>
     public class LengthOfLastWordSolution
     {
         /// <summary>
-        /// Returns the length of the string that present at the end of the string.
+        /// Returns the length of the last word in the input string.
         /// </summary>
-        /// <param name="s">input string</param>
-        /// <returns></returns>
+        /// <param name="s">The input string.</param>
+        /// <returns>The length of the last word.</returns>
         public int Length(string s)
         {
             int i = s.Length - 1;

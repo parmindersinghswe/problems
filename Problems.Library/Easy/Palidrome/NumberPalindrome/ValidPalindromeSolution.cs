@@ -1,15 +1,15 @@
 ﻿namespace Problems.Library.Easy.Palidrome.NumberPalindrome
 {
     /// <summary>
-    /// Checks if given input is Valid Palindrome or not.
+    /// Solution to determine if a given input is a valid palindrome.
     /// </summary>
     public class ValidPalindromeSolution
     {
         /// <summary>
-        /// Helper method to convert lower case letter to upper case letter
+        /// Helper method to convert a lowercase letter to an uppercase letter.
         /// </summary>
-        /// <param name="c">Input character to convert to upper case.</param>
-        /// <returns></returns>
+        /// <param name="c">The input character to convert to uppercase.</param>
+        /// <returns>The converted uppercase character.</returns>
         private char Upper(char c)
         {
             if (c >= 97 && c <= 122)
@@ -18,11 +18,12 @@
             }
             return c;
         }
+
         /// <summary>
-        /// Return true if given input string is valid palindrome otherwise false after removing all the non-alphanumeric characters and ignoring the character case.
+        /// Determines if the given input string is a valid palindrome after removing all non-alphanumeric characters and ignoring character case.
         /// </summary>
-        /// <param name="s">Input string value.</param>
-        /// <returns></returns>
+        /// <param name="s">The input string to check.</param>
+        /// <returns>True if the input string is a valid palindrome, otherwise false.</returns>
         public bool IsPalindrome(string s)
         {
             if (s == null || s == "")

@@ -3,15 +3,15 @@
 namespace Problems.Library.Easy.LinkedListCycle
 {
     /// <summary>
-    /// Solutions related to the Cycles in the Linked List
+    /// Solutions related to detecting cycles in a linked list.
     /// </summary>
     public class LinkedListCycleSolution
     {
         /// <summary>
-        /// Check if given Linked List has cycle exists or not.
+        /// Checks if a cycle exists in the given linked list.
         /// </summary>
-        /// <param name="head">Head node of the linked list.</param>
-        /// <returns></returns>
+        /// <param name="head">The head node of the linked list.</param>
+        /// <returns>True if a cycle is detected; otherwise, false.</returns>
         public bool HasCycle(ListNode? head)
         {
             if (head == null || head.next == null)

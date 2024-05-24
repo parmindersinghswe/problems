@@ -1,18 +1,18 @@
-namespace Problems.Library.Easy.Palidrom.NumberPalidrom
+namespace Problems.Library.Easy.Palindrome.NumberPalindrome
 {
     /// <summary>
-    /// To check if given integer is valid palidrome or not.
+    /// Solution to check if a given integer is a palindrome.
     /// </summary>
     public class NumberPalindromeSolution
     {
         /// <summary>
-        /// Return true if the input string is valid palirome otherwise returns false.
+        /// Returns true if the input integer is a palindrome; otherwise, returns false.
         /// </summary>
-        /// <param name="x">Given input integer value.</param>
-        /// <returns></returns>
+        /// <param name="x">The input integer.</param>
+        /// <returns>True if the input integer is a palindrome; otherwise, false.</returns>
         public bool IsPalindrome(int x)
         {
-            if (x < 0 || x % 10 == 0 && x != 0)
+            if (x < 0 || (x % 10 == 0 && x != 0))
             {
                 return false;
             }

@@ -1,21 +1,21 @@
 ﻿namespace Problems.Library.Easy.SingleNumber
 {
     /// <summary>
-    /// To find the single number present in the list.
+    /// Solution to find the single number in a list of integers.
     /// </summary>
     public class SingleNumberSolution
     {
         /// <summary>
-        /// Return the number that has no duplicate in the array of integers.
+        /// Returns the number that appears only once in the array of integers.
         /// </summary>
         /// <param name="nums">Array of integer values.</param>
-        /// <returns></returns>
+        /// <returns>The integer value that has no duplicates in the array.</returns>
         public int SingleNumber(int[] nums)
         {
             int result = nums[0];
             for (int i = 1; i < nums.Length; i++)
             {
-                result = result ^ nums[i];
+                result ^= nums[i];
             }
             return result;
         }

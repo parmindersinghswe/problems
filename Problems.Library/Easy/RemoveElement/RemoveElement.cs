@@ -1,16 +1,16 @@
 ﻿namespace Problems.Library.Easy.RemoveElement
 {
     /// <summary>
-    /// Remove all the occurences of given input value
+    /// Solution for removing all occurrences of a given input value from an array.
     /// </summary>
     public class RemoveElement
     {
         /// <summary>
-        /// Remove the given input value and set the all other values to the start of the array and return the number of remaining items.
+        /// Removes all occurrences of the specified value from the array, shifts the remaining elements to the start of the array, and returns the count of remaining elements.
         /// </summary>
-        /// <param name="nums">Array of integers</param>
-        /// <param name="val">Target value to remove from array</param>
-        /// <returns></returns>
+        /// <param name="nums">The array of integers.</param>
+        /// <param name="val">The target value to remove from the array.</param>
+        /// <returns>The number of remaining elements after removal.</returns>
         public int Remove(int[] nums, int val)
         {
             int current = 0;

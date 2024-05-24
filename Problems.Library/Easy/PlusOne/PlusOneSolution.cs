@@ -1,15 +1,15 @@
 ﻿namespace Problems.Library.Easy.PlusOne
 {
     /// <summary>
-    /// Add One to the intger value represented with the array of digits
+    /// Solution to increment an integer represented as an array of digits by one.
     /// </summary>
     public class PlusOneSolution
     {
         /// <summary>
-        /// Return the array of integers by adding 1 to the array that represents the one integer value with array of digits.
+        /// Adds one to the integer value represented by an array of digits and returns the resulting array.
         /// </summary>
-        /// <param name="digits">Input of digits.</param>
-        /// <returns></returns>
+        /// <param name="digits">The input array of digits representing an integer.</param>
+        /// <returns>An array of digits representing the incremented integer value.</returns>
         public int[] Increment(int[] digits)
         {
             for (int i = digits.Length - 1; i >= 0; i--)
