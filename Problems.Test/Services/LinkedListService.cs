@@ -13,34 +13,9 @@ namespace Problems.Test.Services
         /// <returns></returns>
         public static ListNode? CreateLinkedList(int[] values)
         {
-            if (values.Length == 0) return null;
-
-            ListNode head = new ListNode(values[0]);
-            ListNode current = head;
-            for (int i = 1; i < values.Length; i++)
-            {
-                current.next = new ListNode(values[i]);
-                current = current.next;
-            }
-            return head;
+            return CreateLinkedList(values, -1);
         }
 
-        /// <summary>
-        /// Compare two linked lists and return true if both are same otherwise false.
-        /// </summary>
-        /// <param name="l1">First linked list head node.</param>
-        /// <param name="l2">Second linked list head node.</param>
-        /// <returns></returns>
-        public static bool CompareLinkedLists(ListNode? l1, ListNode? l2)
-        {
-            while (l1 != null && l2 != null)
-            {
-                if (l1.val != l2.val) return false;
-                l1 = l1.next;
-                l2 = l2.next;
-            }
-            return l1 == null && l2 == null;
-        }
         /// <summary>
         /// Create LinkedList with Cycle from last node to the in between node that is at the given position.
         /// </summary>
@@ -71,6 +46,22 @@ namespace Problems.Test.Services
             }
 
             return head;
+        }
+        /// <summary>
+        /// Compare two linked lists and return true if both are same otherwise false.
+        /// </summary>
+        /// <param name="l1">First linked list head node.</param>
+        /// <param name="l2">Second linked list head node.</param>
+        /// <returns></returns>
+        public static bool CompareLinkedLists(ListNode? l1, ListNode? l2)
+        {
+            while (l1 != null && l2 != null)
+            {
+                if (l1.val != l2.val) return false;
+                l1 = l1.next;
+                l2 = l2.next;
+            }
+            return l1 == null && l2 == null;
         }
         /// <summary>
         /// Returns the list of integers converted from linked list values.
