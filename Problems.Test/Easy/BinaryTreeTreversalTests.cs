@@ -56,5 +56,31 @@ namespace Problems.Test.Easy
             // Assert
             Assert.Equal(expectedOutput, result);
         }
+
+        public static IEnumerable<object[]> InorderTraversalTestData()
+        {
+            yield return new object[] { new TreeNode(1), new int[] { 1 } };
+            yield return new object[] {
+        new TreeNode(1, null, new TreeNode(2, new TreeNode(3), null)),
+        new int[] { 1, 3, 2 }
+    };
+            yield return new object[] {
+        new TreeNode(4,
+            new TreeNode(2, new TreeNode(1), new TreeNode(3)),
+            new TreeNode(6, new TreeNode(5), new TreeNode(7))
+        ),
+        new int[] { 1, 2, 3, 4, 5, 6, 7 }
+    };
+        }
+
+
+        [Theory]
+        [MemberData(nameof(InorderTraversalTestData))]
+        public void TestInorderTraversal(TreeNode? input, int[] expected)
+        {
+            var solution = new BinaryTreeTraversalSolution();
+            var result = solution.InorderTraversal(input);
+            Assert.Equal(expected, result);
+        }
     }
 }

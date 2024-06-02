@@ -1,4 +1,5 @@
 ﻿using Problems.Library.Models;
+using System.Collections.Generic;
 
 namespace Problems.Library.Easy.BinaryTreeTraversal
 {
@@ -7,6 +8,7 @@ namespace Problems.Library.Easy.BinaryTreeTraversal
     /// </summary>
     public class BinaryTreeTraversalSolution
     {
+        private readonly IList<int> Traversed = new List<int>();
         /// <summary>
         /// Performs a post-order traversal of the binary tree.
         /// </summary>
@@ -14,12 +16,13 @@ namespace Problems.Library.Easy.BinaryTreeTraversal
         /// <returns>A list of node values in post-order.</returns>
         public IList<int> PostorderTraversal(TreeNode? root)
         {
-            IList<int> result = new List<int>();
             if (root != null)
             {
-                TraversePostOrder(root, result);
+                PostorderTraversal(root.left);
+                PostorderTraversal(root.right);
+                Traversed.Add(root.val);
             }
-            return result;
+            return Traversed;
         }
 
         /// <summary>
@@ -29,48 +32,28 @@ namespace Problems.Library.Easy.BinaryTreeTraversal
         /// <returns>A list of node values in pre-order.</returns>
         public IList<int> PreorderTraversal(TreeNode? root)
         {
-            IList<int> list = new List<int>();
+           if(root != null)
+            {
+                Traversed.Add(root.val);
+                PreorderTraversal(root.left);
+                PreorderTraversal(root.right);
+            }
+            return Traversed;
+        }
+        /// <summary>
+        /// Performs a in-order traversal of the binary tree.
+        /// </summary>
+        /// <param name="root">The root node of the binary tree.</param>
+        /// <returns>A list of node values in pre-order.</returns>
+        public IList<int> InorderTraversal(TreeNode? root)
+        {
             if (root != null)
             {
-                TraversePreOrder(root, list);
+                InorderTraversal(root.left);
+                Traversed.Add(root.val);
+                InorderTraversal(root.right);
             }
-            return list;
-        }
-
-        /// <summary>
-        /// Helper method for performing pre-order traversal.
-        /// </summary>
-        /// <param name="root">The root node of the binary tree.</param>
-        /// <param name="list">A list to store the visited node values.</param>
-        private void TraversePreOrder(TreeNode root, IList<int> list)
-        {
-            list.Add(root.val);
-            if (root.left != null)
-            {
-                TraversePreOrder(root.left, list);
-            }
-            if (root.right != null)
-            {
-                TraversePreOrder(root.right, list);
-            }
-        }
-
-        /// <summary>
-        /// Helper method for performing post-order traversal.
-        /// </summary>
-        /// <param name="root">The root node of the binary tree.</param>
-        /// <param name="list">A list to store the visited node values.</param>
-        private void TraversePostOrder(TreeNode root, IList<int> list)
-        {
-            if (root.left != null)
-            {
-                TraversePostOrder(root.left, list);
-            }
-            if (root.right != null)
-            {
-                TraversePostOrder(root.right, list);
-            }
-            list.Add(root.val);
+            return Traversed;
         }
     }
 }
