@@ -12,15 +12,15 @@ namespace Problems.Library.Easy.SymmetricTree
         }
 
         // Helper method to check if two subtrees are mirror images of each other
-        public bool IsMirror(TreeNode? left, TreeNode? right)
+        public bool IsMirror(TreeNode? root, TreeNode? mirror)
         {
             // If either subtree is null, both must be null to be mirrors
-            if (left == null || right == null)
+            if (root == null || mirror == null)
             {
-                return left == right;
+                return root == mirror;
             }
             // Check if the current nodes have the same value and their children are mirrors
-            return left.val == right.val && IsMirror(left.left, right.right) && IsMirror(left.right, right.left);
+            return root.val == mirror.val && IsMirror(root.left, mirror.right) && IsMirror(root.right, mirror.left);
         }
     }
 

@@ -29,7 +29,7 @@ namespace Problems.Test.Easy
 
             var singleNodeTree = new TreeNode(1);
 
-            TreeNode nullTree = null;
+            TreeNode? nullTree = null;
 
             return new List<object[]> {
             new object[] { symmetricTree, true },
