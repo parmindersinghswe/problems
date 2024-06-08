@@ -19,14 +19,14 @@ namespace Problems.Library.TwoSum
                 int complement = target - nums[i];
                 if (map.ContainsKey(complement))
                 {
-                    return new int[] { map[complement], i };
+                    return [map[complement], i];
                 }
                 if (!map.ContainsKey(nums[i]))
                 {
                     map[nums[i]] = i;
                 }
             }
-            return new int[] { };
+            return [];
         }
     }
 }

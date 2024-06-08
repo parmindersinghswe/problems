@@ -10,8 +10,8 @@ namespace Problems.Library.Medium.IntegerToRoman
         /// <summary>
         /// Array of tuples that map integer values to their corresponding Roman numeral representations.
         /// </summary>
-        private static readonly (int value, string numeral)[] RomanNumerals = new (int, string)[]
-        {
+        private static readonly (int value, string numeral)[] RomanNumerals =
+        [
             (1000, "M"),
             (900, "CM"),
             (500, "D"),
@@ -25,7 +25,7 @@ namespace Problems.Library.Medium.IntegerToRoman
             (5, "V"),
             (4, "IV"),
             (1, "I")
-        };
+        ];
 
         /// <summary>
         /// Converts an integer to its Roman numeral representation.
