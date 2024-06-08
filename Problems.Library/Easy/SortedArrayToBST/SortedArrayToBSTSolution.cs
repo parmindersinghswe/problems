@@ -3,7 +3,7 @@
 namespace Problems.Library.Easy.SortedArrayToBST
 {
     /// <summary>
-    /// Class to convert a sorted array to a height-balanced binary search tree (BST).
+    /// Solution to convert a sorted array to a height-balanced binary search tree (BST).
     /// </summary>
     public class SortedArrayToBSTSolution
     {
