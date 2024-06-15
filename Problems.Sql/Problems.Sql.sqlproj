@@ -58,4 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Easy" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Easy\TopTravellers.md" />
+  </ItemGroup>
 </Project>
