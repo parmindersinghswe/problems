@@ -5,8 +5,9 @@ namespace Problems.Test.Easy
 {
     public class SymmetricTreeTests
     {
-        public static IEnumerable<object[]> GetTestData()
-        {            var symmetricTree = new TreeNode(1,
+        public static IEnumerable<object?[]> GetTestData()
+        {
+            var symmetricTree = new TreeNode(1,
                 new TreeNode(2,
                     new TreeNode(3),
                     new TreeNode(4)
@@ -31,11 +32,11 @@ namespace Problems.Test.Easy
 
             TreeNode? nullTree = null;
 
-            return new List<object[]> {
-            new object[] { symmetricTree, true },
-            new object[] { asymmetricTree, false },
-            new object[] { singleNodeTree, true },
-            new object[] { nullTree, true }
+            return new List<object?[]> {
+            new object?[] { symmetricTree, true },
+            new object?[] { asymmetricTree, false },
+            new object?[] { singleNodeTree, true },
+            new object?[] { nullTree, true }
         };
         }
 
