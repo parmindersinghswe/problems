@@ -1,4 +1,12 @@
-﻿using Problems.Library.Easy.LengthOfLastWord;
+﻿using System;
+using System.Data;
+using System.Text;
+using System.Data.Common;
+using System.Collections;
+using System.Text.Encodings;
+using System.Collections.Generic;
+using Problems.Library.Easy.LengthOfLastWord;
+
 namespace Problems.Test.Easy
 {
     public class LengthOfLastWordTests
