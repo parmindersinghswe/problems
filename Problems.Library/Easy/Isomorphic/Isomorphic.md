@@ -1,16 +1,5 @@
 # Isomorphic Strings
 
-**Solved**  
-**Easy**  
-
-## Topics
-- Strings
-- Hash Maps
-
-## Companies
-
----
-
 ### Problem Description
 
 Given two strings `s` and `t`, determine if they are isomorphic.
