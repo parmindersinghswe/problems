@@ -60,5 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Easy\TopTravellers.md" />
+    <None Include="Easy\SalesProblem.md" />
   </ItemGroup>
 </Project>
